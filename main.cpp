@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#include<stdlib.h>				//ïîäêëþ÷àåò ôóíêöèþ system("cls");
+#include<stdlib.h>
 using namespace std;
 
 
@@ -13,9 +13,6 @@ int main()
  	
  	int value;
  	int indx;
- 	
- 	/*setlocale(LC_All, "ru");*/
- 	
  	
  	while (true)			
 {
