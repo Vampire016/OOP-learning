@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#include<stdlib.h>				//подключает функцию system("cls");
+#include<stdlib.h>				//ГЇГ®Г¤ГЄГ«ГѕГ·Г ГҐГІ ГґГіГ­ГЄГ¶ГЁГѕ system("cls");
 using namespace std;
 
 
@@ -14,7 +14,7 @@ int main()
  	int value;
  	int indx;
  	
- 	//setlocale(0, "");
+ 	/*setlocale(0, "");*/
  	
  	
  	while (true)			
