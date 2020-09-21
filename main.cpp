@@ -6,13 +6,12 @@ using namespace std;
 
 
 
-void Foo();
-{
-	int Foo1();			//increase by 1
-	int Foo2();			//swap the elements of arr
-	int Foo3();			//print revert
-	int Foo4();			//min value
-}
+
+int Foo1();			//increase by 1
+int Foo2();			//swap the elements of arr
+int Foo3();			//print revert
+int Foo4();			//min value
+
 
 
 int main()
@@ -26,7 +25,7 @@ int main()
  	
  	while (true)			
 {
-	cout << "0 - Exit 1 - Read 2 - Write(not more than 5 elements) 3 - increase by 1 4 - " << endl <<  "please, choose a command: ";
+	cout << "0 - Exit 1 - Read 2 - Write(not more than 5 elements) 3 - increase by 1 4 - swap elem arr 5 - print arr rev 6 - min val" << endl <<  "please, choose a command: ";
 	cin>>command;
 	system("cls");
 	
@@ -50,8 +49,20 @@ int main()
 		break;
 		
 		case 3:
-		
+			foo1();
 		break;	
+		
+		case 3:
+			foo2();
+		break;
+		
+		case 3:
+			foo3();
+		break;
+		
+		case 3:
+			foo4();
+		break;
 		
 		case 0:
 			return 0;
