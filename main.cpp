@@ -1,8 +1,17 @@
 #include <iostream>
 #include <string>
 
-#include<stdlib.h>				//подключает функцию system("cls");
+#include<stdlib.h>
 using namespace std;
+
+
+
+
+void Foo1(int *arr);			//increase by 1
+void Foo2(int *arr);			//swap the elements of arr
+void Foo3(int *arr);			//print revert
+void Foo4(int *arr);			//min value
+
 
 
 int main()
@@ -14,12 +23,9 @@ int main()
  	int value;
  	int indx;
  	
- 	//setlocale(0, "");
- 	
- 	
  	while (true)			
 {
-	cout << "0 - Exit 1 - Read 2 - Write(not more than 5 elements) 3 - sort" << endl <<  "please, choose a command: ";
+	cout << "0 - Exit 1 - Read 2 - Write(not more than 5 elements) 3 - increase by 1 4 - swap elem arr 5 - print arr rev 6 - min val" << endl <<  "please, choose a command: ";
 	cin>>command;
 	system("cls");
 	
@@ -43,8 +49,20 @@ int main()
 		break;
 		
 		case 3:
-		
+			Foo1(arr);
 		break;	
+		
+		case 4:
+			Foo2(arr);
+		break;
+		
+		case 5:
+			Foo3(arr);
+		break;
+		
+		case 6:
+			Foo4(arr);
+		break;
 		
 		case 0:
 			return 0;
