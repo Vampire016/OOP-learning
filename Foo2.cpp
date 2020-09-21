@@ -38,7 +38,7 @@ void Foo2(int *arr)
 
 
 	
-	cout << "Massiv before swap: ";
+	cout << "Massiv after swap: ";
 
 	for (int i = 0; i < 5; i++)
 	{
