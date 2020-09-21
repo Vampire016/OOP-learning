@@ -2,7 +2,7 @@
 
 //arr
 
-int Foo4(int *arr)
+void Foo4(int *arr)
 {
 	int minValue = arr[0];
 
