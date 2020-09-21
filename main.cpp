@@ -49,19 +49,19 @@ int main()
 		break;
 		
 		case 3:
-			foo1(arr);
+			Foo1(arr);
 		break;	
 		
-		case 3:
-			foo2(arr);
+		case 4:
+			Foo2(arr);
 		break;
 		
-		case 3:
-			foo3(arr);
+		case 5:
+			Foo3(arr);
 		break;
 		
-		case 3:
-			foo4(arr);
+		case 6:
+			Foo4(arr);
 		break;
 		
 		case 0:
