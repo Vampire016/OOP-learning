@@ -16,6 +16,13 @@ using namespace std;			//use cout/cin  (std::)
 
 void Foo2(int *arr)
 {
+	cout << " Massiv Before swap:";
+	for (int i = 0; i < 5; i++)
+    	{
+        	cout«arr[i]«"\t";
+    	}
+    		cout«endl;
+
 	int a, b, temp;
 
 	cin >> a >> b;
@@ -25,6 +32,13 @@ void Foo2(int *arr)
 	arr[a] = arr[b];
 	
 	arr[b] = temp;
-	cout << "vivod massiva" << endl;
+	
+
+	cout << " Massiv after swap:";
+	for (int i = 0; i < 5; i++)
+    	{
+        	cout«arr[i]«"\t";
+    	}
+    		cout«endl;
 }
 
