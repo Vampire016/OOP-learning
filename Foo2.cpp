@@ -2,6 +2,18 @@
 
 //arr
 
+////////////////////////////////////////////////////////////////////////////
+
+#include <iostream>				//using cout/cin
+
+#include<stdlib.h>				//using system("cls)
+
+using namespace std;			//use cout/cin  (std::)
+
+////////////////////////////////////////////////////////////////////////////
+
+
+
 void Foo2(int *arr)
 {
 	int a, b, temp;
@@ -10,14 +22,9 @@ void Foo2(int *arr)
 	
 	temp = arr[a];
 	
-	arr[a] = arr[b]
+	arr[a] = arr[b];
 	
 	arr[b] = temp;
 	cout << "vivod massiva" << endl;
 }
-
-
-
-
-
 

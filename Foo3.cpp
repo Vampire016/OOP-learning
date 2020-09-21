@@ -2,7 +2,17 @@
 
 //arr
 
+////////////////////////////////////////////////////////////////////////////
 
+#include <iostream>				//using cout/cin
+
+#include<stdlib.h>				//using system("cls)
+
+using namespace std;			//use cout/cin  (std::)
+
+////////////////////////////////////////////////////////////////////////////
+
+/*
 void Foo3(int *arr);
 {
    if( n==1){
@@ -16,5 +26,5 @@ void Foo3(int *arr);
    cout <<"Vvedite massiv: " << endl;
    
 }
-
+*/
 

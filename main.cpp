@@ -25,7 +25,7 @@ int main()
  	
  	while (true)			
 {
-	cout << "0 - Exit 1 - Read 2 - Write(not more than 5 elements) 3 - increase by 1 4 - swap elem arr 5 - print arr rev 6 - min val" << endl <<  "please, choose a command: ";
+	cout << "0 - Exit\n1 - Read\n2 - Write(not more than 5 elements)\n3 - increase by 1\n4 - swap elem arr\n5 - print arr rev\n6 - min val" << endl << endl <<  "please, choose a command: ";
 	cin>>command;
 	system("cls");
 	
@@ -55,11 +55,11 @@ int main()
 		case 4:
 			Foo2(arr);
 		break;
-		
+		/*
 		case 5:
 			Foo3(arr);
 		break;
-		
+		*/
 		case 6:
 			Foo4(arr);
 		break;
