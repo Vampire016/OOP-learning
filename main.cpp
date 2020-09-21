@@ -7,10 +7,10 @@ using namespace std;
 
 
 
-int Foo1();			//increase by 1
-int Foo2();			//swap the elements of arr
-int Foo3();			//print revert
-int Foo4();			//min value
+void Foo1(int *arr);			//increase by 1
+void Foo2(int *arr);			//swap the elements of arr
+void Foo3(int *arr);			//print revert
+void Foo4(int *arr);			//min value
 
 
 
@@ -49,19 +49,19 @@ int main()
 		break;
 		
 		case 3:
-			foo1();
+			foo1(arr);
 		break;	
 		
 		case 3:
-			foo2();
+			foo2(arr);
 		break;
 		
 		case 3:
-			foo3();
+			foo3(arr);
 		break;
 		
 		case 3:
-			foo4();
+			foo4(arr);
 		break;
 		
 		case 0:
