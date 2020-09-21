@@ -5,6 +5,16 @@
 using namespace std;
 
 
+
+void Foo();
+{
+	int Foo1();			//increase by 1
+	int Foo2();			//swap the elements of arr
+	int Foo3();			//print revert
+	int Foo4();			//min value
+}
+
+
 int main()
  {
  	int arr[5] = {3,5,7,6,9};
@@ -16,7 +26,7 @@ int main()
  	
  	while (true)			
 {
-	cout << "0 - Exit 1 - Read 2 - Write(not more than 5 elements) 3 - sort" << endl <<  "please, choose a command: ";
+	cout << "0 - Exit 1 - Read 2 - Write(not more than 5 elements) 3 - increase by 1 4 - " << endl <<  "please, choose a command: ";
 	cin>>command;
 	system("cls");
 	
