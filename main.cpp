@@ -55,11 +55,11 @@ int main()
 		case 4:
 			Foo2(arr);
 		break;
-		/*
+		
 		case 5:
 			Foo3(arr);
 		break;
-		*/
+		
 		case 6:
 			Foo4(arr);
 		break;

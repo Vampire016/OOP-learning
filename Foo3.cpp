@@ -3,7 +3,7 @@
 using namespace std;
 
 
-void rev(int *arr)
+void Foo3(int *arr)
 {
 
 int size = 5;
