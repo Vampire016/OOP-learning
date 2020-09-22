@@ -19,6 +19,7 @@ void Foo1(int *arr)
 for(int i=0; i<5; i++)
  arr[i]++;
 }
-
+cout<<"uvelichte znachenia elementov massiva na 1";
+cout<< endl;
 
 
