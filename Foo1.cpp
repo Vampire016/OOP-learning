@@ -15,10 +15,7 @@ using namespace std;			//use cout/cin  (std::)
 
 
 void Foo1(int *arr)
-{
-	cout<<"massive before +1";
-	cout<< endl;
-	
+{	
 	for(int i=0; i<5; i++)
 	{
 		arr[i]++;
