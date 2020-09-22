@@ -16,15 +16,29 @@ using namespace std;			//use cout/cin  (std::)
 
 void Foo1(int *arr)
 {	
-	cout<<"massive before  +1";
-	cout<< endl;
+	cout<<"massive before:\t" << endl;
+	
+	
+	for (int i=0; i<5; i++)
+	{
+	cout << arr[i] <<"\t";
+	}
+	
 	
 	for(int i=0; i<5; i++)
 	{
 		arr[i]++;
 	}
 	
-	cout<<"uvelichenie znachenia elementov massiva na 1";
-	cout<< endl;
+	
+	cout<<"massive after: " << endl;
+
+	for (int i=0; i<5; i++)
+	{
+		cout << arr[i] <<"\t";
+	}
+
+
+
 }
 
