@@ -37,12 +37,13 @@ void quickSortR(int* arr, int SIZE)
   if ( j > 0 ) quickSortR(arr, j);
   if ( SIZE > i ) quickSortR(arr+i, SIZE-i);
   
-  
+ /* 
   for(int i = 0; i < SIZE; i++)
 	{
 		cout << arr[i];
 	}
 	
 	cout << endl << endl;
+	*/
 }
 
