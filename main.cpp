@@ -11,12 +11,16 @@ void Foo1(int *arr);			//increase by 1
 void Foo2(int *arr);			//swap the elements of arr
 void Foo3(int *arr);			//print revert
 void Foo4(int *arr);			//min value
-void Foo5(int *arr);
+void Foo5(int *arr);			//bubble sort
+
+
+void quickSortR(int* arr, 		//quick sort
+int SIZE); 
 
 
 int main()
  {
- 	int arr[5] = {3,5,7,6,9};
+ 	int arr[5] = {9,6,2,3,4};
  	
  	int command;
  	
@@ -25,7 +29,7 @@ int main()
  	
  	while (true)			
 {
-	cout << "0 - Exit\n1 - Read\n2 - Write(not more than 5 elements)\n3 - increase by 1\n4 - swap elem arr\n5 - print arr rev\n6 - min val\n7 - bubble sort" << endl << endl <<  "please, choose a command: ";
+	cout << "0 - Exit\n1 - Read\n2 - Write(not more than 5 elements)\n3 - increase by 1\n4 - swap elem arr\n5 - print arr rev\n6 - min val\n7 - bubble sort\n8 - quick sort" << endl << endl <<  "please, choose a command: ";
 	cin>>command;
 	system("cls");
 	
@@ -68,6 +72,10 @@ int main()
 			Foo5(arr);
 		break;
 		
+		case 8:
+			quickSortR(arr, 5);
+		break;
+		
 		case 0:
 			return 0;
 		break;
@@ -77,3 +85,4 @@ int main()
  	
 	return 0;
  }
+
