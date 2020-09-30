@@ -30,6 +30,8 @@ void Foo5(int *arr)
 	{
 		cout << arr[i];
 	}
+	
+	cout << endl << endl;
 }
 
 
