@@ -74,14 +74,6 @@ int main()
 		
 		case 8:
 			quickSortR(arr, 5);
-			
-		case 9:
-			 for(int i = 0; i < 5; i++)
-			{
-				cout << arr[i];
-			}
-	
-			cout << endl << endl;
 		break;
 		
 		case 0:
