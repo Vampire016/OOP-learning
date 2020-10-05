@@ -18,8 +18,78 @@ void quickSortR(int* arr, 		//quick sort
 int SIZE); 
 
 
+
+
+
+struct Node
+{
+	int data;
+	Node *next;
+};
+
+Node *head, *tail;
+
+void PrintStruct()
+{
+	
+	Node *tmp = head;
+	
+	while(tmp != NULL)
+	{
+		cout << tmp -> data << "\t";
+		
+		tmp = tmp -> next;
+	}
+	
+	cout << endl << endl;
+}
+
+void AddTail()
+{
+	
+	int a;
+	
+	Node *Four = new Node();
+	
+	cout << "set the data: ";
+	
+	cin >> a;
+	Four -> data = a;
+	
+	tail -> next = Four;
+	Four -> next = NULL;
+	tail = Four;
+	
+}
+
+
+
 int main()
  {
+ 	Node *First = new Node();
+ 	Node *Second = new Node();
+ 	Node *Third = new Node();
+ 	
+ 	
+ 	First -> data = 10;
+ 	First -> next = Second;
+ 	
+ 	Second -> data = 15;
+ 	Second -> next = Third;
+ 	
+ 	Third -> data = 20;
+ 	Third -> next = NULL;
+ 	
+ 	head = First;
+ 	tail = Third;
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
  	int arr[5] = {9,6,2,3,4};
  	
  	int command;
@@ -81,6 +151,14 @@ int main()
 				cout << arr[i];
 			}			
 			cout << endl << endl;
+		break;
+		
+		case 10:
+			PrintStruct();
+		break;
+		
+		case 11:
+			AddTail();
 		break;
 		
 		case 0:

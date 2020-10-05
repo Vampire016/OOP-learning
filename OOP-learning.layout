@@ -32,7 +32,12 @@ CursorRow=40
 TopLine=1
 LeftChar=1
 [Editor_6]
-CursorCol=25
-CursorRow=79
-TopLine=46
+CursorCol=9
+CursorRow=162
+TopLine=42
+LeftChar=1
+[Editor_7]
+CursorCol=1
+CursorRow=1
+TopLine=1
 LeftChar=1
