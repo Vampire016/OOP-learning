@@ -62,6 +62,61 @@ void AddTail()
 	
 }
 
+void AddHead()
+{
+	int a;
+	
+	Node *Fst = new Node();
+	
+	cout << "set the data: ";
+	
+	cin >> a;
+	Fst -> data = a;
+	
+	Fst -> next = head;
+	head = Fst;
+	 
+}
+
+void DelEl()
+{
+	int a;
+	int i;
+	Node *current = head;
+	Node * currentPrev;
+	
+	cout << "chose the element for delete: ";
+	
+	cin >> a;
+	
+	while(a != i)
+	{
+		
+		
+		if(i != 1)
+		{
+			currentPrev = head;
+		}
+		else if(i == 0 && i > 1)
+		{
+			currentPrev = head -> next;
+		}
+		
+		current = current -> next;
+		
+		i++;
+	}
+	
+	if(current != head)
+	{
+		
+		
+	}	
+	
+	
+	
+}
+
 
 
 int main()
@@ -160,6 +215,14 @@ int main()
 		case 11:
 			AddTail();
 		break;
+		
+		case 12:
+			AddHead();
+			break;
+			
+		case 13:
+			DelEl();
+			break;	
 		
 		case 0:
 			return 0;
