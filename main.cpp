@@ -81,40 +81,46 @@ void AddHead()
 void DelEl()
 {
 	int a;
-	int i;
+	int i = 0;
 	Node *current = head;
-	Node * currentPrev;
+	Node *currentPrev;
 	
 	cout << "chose the element for delete: ";
 	
 	cin >> a;
 	
-	while(a != i)
+	if(a == 0)
 	{
-		
-		
-		if(i != 1)
-		{
-			currentPrev = head;
-		}
-		else if(i == 0 && i > 1)
-		{
-			currentPrev = head -> next;
-		}
-		
-		current = current -> next;
-		
-		i++;
+		head = current -> next;
+		delete current;
 	}
-	
-	if(current != head)
-	{
+	else
+	{	
+				
+		while(a != i)
+		{
+			if(current != tail)
+			{
+				currentPrev = current;
+				current = current -> next;
+			}
+			else
+			{
+				tail = currentPrev;
+				currentPrev = NULL;
+				delete current;
+			}		
+						
+			i++;
+		}
 		
+		if(a == i)
+		{
+			currentPrev -> next = current -> next;
+			delete current;
+		}
 		
-	}	
-	
-	
-	
+	}
 }
 
 
