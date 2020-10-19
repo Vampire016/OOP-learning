@@ -2,6 +2,7 @@
 #include <string>
 
 #include<stdlib.h>
+
 using namespace std;
 
 
@@ -17,7 +18,7 @@ void Foo5(int *arr);			//bubble sort
 void quickSortR(int* arr, 		//quick sort
 int SIZE); 
 
-
+string Words;
 
 
 
@@ -25,9 +26,11 @@ struct Node
 {
 	int data;
 	Node *next;
+	Node *prev;
 };
 
 Node *head, *tail;
+
 
 void PrintStruct()
 {
@@ -44,6 +47,20 @@ void PrintStruct()
 	cout << endl << endl;
 }
 
+void PrintStructRev()
+{
+	Node *tmp = tail;
+	
+	while(tmp != NULL)
+	{
+		cout << tmp -> data << "\t";
+		
+		tmp = tmp -> prev;
+	}
+	
+	cout << endl << endl;
+}
+
 void AddTail()
 {
 	
@@ -55,6 +72,9 @@ void AddTail()
 	
 	cin >> a;
 	Four -> data = a;
+	
+	
+	Four -> prev = tail;
 	
 	tail -> next = Four;
 	Four -> next = NULL;
@@ -73,13 +93,16 @@ void AddHead()
 	cin >> a;
 	Fst -> data = a;
 	
+	
+	head -> prev = Fst;
 	Fst -> next = head;
+	Fst -> prev = NULL;
 	head = Fst;
 	 
 }
 
 void DelEl()
-{
+{/*
 	int a;
 	int i = 0;
 	Node *current = head;
@@ -120,7 +143,7 @@ void DelEl()
 			delete current;
 		}
 		
-	}
+	}*/
 }
 
 
@@ -134,20 +157,50 @@ int main()
  	
  	First -> data = 10;
  	First -> next = Second;
+ 	First -> prev = NULL;
  	
  	Second -> data = 15;
  	Second -> next = Third;
+ 	Second -> prev = First;
  	
  	Third -> data = 20;
  	Third -> next = NULL;
+ 	Third -> prev = Second;
  	
  	head = First;
  	tail = Third;
  	
  	
  	
+	 Words = "hellomyfriend";
  	
  	
+ 	
+ 	char a = 'a';
+ 	
+ 	int ia = (int)a;
+ 	
+ 	int *array[26];
+ 	
+ 	int Size[26] = {};
+ 	
+ 	for(int i = 0; i < 26; i++)
+ 	{
+ 		array[i] = (int *)malloc(sizeof(int) * Words.size()); 		 		
+	}
+ 	
+ 	for(int j = 0; j < Words.size(); j++)
+	{			  		
+		int ij = (int)Words[j] - (ia);	
+			
+		array[ij][Size[ij]] = j;
+		
+		Size[ij]++;	
+		int trt = Size[ij];
+		
+	}		
+ 	
+	
  	
  	
  	
@@ -160,7 +213,17 @@ int main()
  	
  	while (true)			
 {
-	cout << "0 - Exit\n1 - Read\n2 - Write(not more than 5 elements)\n3 - increase by 1\n4 - swap elem arr\n5 - print arr rev\n6 - min val\n7 - bubble sort\n8 - quick sort\n10 - print struct\n11 - add element at tail\n12 - add element at head\n13 - del element" << endl << endl <<  "please, choose a command: ";
+	for(int i = 0; i < 26; i++)
+ 	{
+ 		for(int j = 0; j < Size[i]; j++)
+ 		{
+ 			cout << array[i][j] << " ";
+		}
+		
+		cout << endl;
+	}
+	
+	cout << "0 - Exit\n1 - Read\n2 - Write(not more than 5 elements)\n3 - increase by 1\n4 - swap elem arr\n5 - print arr rev\n6 - min val\n7 - bubble sort\n8 - quick sort\n10 - print struct\n11 - add element at tail\n12 - add element at head\n13 - del element\n14 - print struct rev" << endl << endl <<  "please, choose a command: ";
 	cin>>command;
 	system("cls");
 	
@@ -229,6 +292,10 @@ int main()
 		case 13:
 			DelEl();
 			break;	
+		
+		case 14:
+			PrintStructRev();
+			break;
 		
 		case 0:
 			return 0;
