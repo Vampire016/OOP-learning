@@ -160,7 +160,7 @@ int main()
  	
  	while (true)			
 {
-	cout << "0 - Exit\n1 - Read\n2 - Write(not more than 5 elements)\n3 - increase by 1\n4 - swap elem arr\n5 - print arr rev\n6 - min val\n7 - bubble sort\n8 - quick sort" << endl << endl <<  "please, choose a command: ";
+	cout << "0 - Exit\n1 - Read\n2 - Write(not more than 5 elements)\n3 - increase by 1\n4 - swap elem arr\n5 - print arr rev\n6 - min val\n7 - bubble sort\n8 - quick sort\n10 - print struct\n11 - add element at tail\n12 - add element at head\n13 - del element" << endl << endl <<  "please, choose a command: ";
 	cin>>command;
 	system("cls");
 	
