@@ -31,6 +31,15 @@ struct Node
 
 Node *head, *tail;
 
+struct Tree
+{
+	int data;
+	Tree *left;
+	Tree *right;
+	int check = 0;
+};
+
+Tree *head_r, *current;
 
 void PrintStruct()
 {
@@ -45,6 +54,13 @@ void PrintStruct()
 	}
 	
 	cout << endl << endl;
+	
+	
+	/*
+	while()
+	{
+		if (current -> left 
+	}*/
 }
 
 void PrintStructRev()
@@ -102,7 +118,7 @@ void AddHead()
 }
 
 void DelEl()
-{/*
+{
 	int a;
 	int i = 0;
 	Node *current = head;
@@ -143,11 +159,58 @@ void DelEl()
 			delete current;
 		}
 		
-	}*/
+	}
 }
 
 
-
+/*
+void AddBranch()
+{
+	int a;
+	
+	cout << "set the data: ";
+	
+	cin >> a;
+	
+	current = head_r;
+	
+	if ((a > (current -> data))&&((current -> right) != NULL))
+	{
+		current = current -> right;
+		if ((a > (current -> data))&&((current -> right) == NULL))
+		{
+			Tree *Branch = new Tree();		
+			current -> right = Branch;
+			current = current -> right;
+			current -> data = a;		
+		}
+	}
+	else if ((a < (current -> data))&&((current -> left) != NULL))
+	{
+		current = current -> left;
+		if ((a < (head_r -> data))&&((current -> left) == NULL))
+		{
+			Tree *Branch = new Tree();		
+			current -> left = Branch;
+			current = current -> right;
+			current -> data = a;
+		}
+	}	
+}*/
+/*
+void InsertVal()
+{
+	int a;
+	
+	cout << "set the data: ";
+	
+	cin >> a;
+	
+	
+	
+	void AddRood();
+}
+*/
 int main()
  {
  	Node *First = new Node();
@@ -169,6 +232,16 @@ int main()
  	
  	head = First;
  	tail = Third;
+ 	
+ 	
+ 	Tree *Rood = new Tree();
+ 	Rood -> data = 10;
+ 	Rood -> left = NULL;
+ 	Rood -> right = NULL;
+	//Rood -> level = 1;
+	
+	head_r = Rood;
+	
  	
  	
  	
@@ -212,7 +285,7 @@ int main()
  	int indx;
  	
  	while (true)			
-{
+{/*
 	for(int i = 0; i < 26; i++)
  	{
  		for(int j = 0; j < Size[i]; j++)
@@ -222,7 +295,7 @@ int main()
 		
 		cout << endl;
 	}
-	
+	*/
 	cout << "0 - Exit\n1 - Read\n2 - Write(not more than 5 elements)\n3 - increase by 1\n4 - swap elem arr\n5 - print arr rev\n6 - min val\n7 - bubble sort\n8 - quick sort\n10 - print struct\n11 - add element at tail\n12 - add element at head\n13 - del element\n14 - print struct rev" << endl << endl <<  "please, choose a command: ";
 	cin>>command;
 	system("cls");
@@ -296,6 +369,10 @@ int main()
 		case 14:
 			PrintStructRev();
 			break;
+			
+		/*case 15:
+			AddBranch();
+			break;	*/
 		
 		case 0:
 			return 0;
